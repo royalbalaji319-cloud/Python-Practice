@@ -15,7 +15,7 @@ TwoTypes:
 
 
 #student records
-'''
+
 def name(Name,Marks):
     if Marks > 90:
         print(Name,':A Grade')
@@ -28,10 +28,10 @@ def name(Name,Marks):
 name('Balaji',37)
 name('Sai',89)
 name('Pranay',98)
-'''
+
 
 # Login programme
-'''
+
 def login():
     while True:
         user = input('Enter username:')
@@ -54,7 +54,7 @@ def withdraw(balance):
         
 
 withdraw(24000)
-'''
+
 
 #Scopes:1.Global & Local Variables.
 #1.Global Variable:
@@ -68,43 +68,43 @@ withdraw(24000)
 - Local variable is a inside function.
 - It can be access inside function only.
 '''
-'''
+
 a = 2
 def add():
     global b
     b = 3
 add()
 print(a+b)
-'''
+
 #local
-'''
+
 def sub(a,b):
     print(a-b)
 sub(3,5)
-'''
+
 
 #Callback function():
 #- One function passed into another function as an argument this is called callback function.
 #- It automatically called once the main function completes its task.
 
 #payment programme 
-'''
+
 def payment(Callback):
     print('Payment Processing...')
     Callback()
 def process():
     print('Payment completed Successfully')
 payment(process)
-'''
 
-'''
+
+
 def form(Callback):
     print('Form submitted')
     Callback()
 def Show_message():
     print('Thanyou for submitting')
 form(Show_message)
-'''
+
 
 #Lambda Function():
 '''
@@ -125,32 +125,33 @@ form(Show_message)
 - Selects elements from a list based on a condition.
 '''
 #Lambda Map():
-'''
+
 li = [10,20,30,40]
 a = list(map(lambda n:n*2,li))
 print(a)
-'''
+
 #Add Tax:using map()
-'''
+
 Prices = [100,200,300,400]
 add_tax = list(map(lambda n:n*1.18,Prices))
 print(add_tax)
-'''
+
 #Discount:using map()
-'''
+
 prices = [100,300,400,600]
 Discount = list(map(lambda n:n*0.9,prices))
 print(Discount)
-'''
+
 
 #Lambda Filter():
-'''
+
 prices = [1000,2000,3000,4000,5000]
 discount = list(map(lambda n:n*0.9 if n>3000 else False,prices))
 print(discount)
-'''
-'''
+
+
 numbers = ['8142103613','15645','2589631470']
 valid = list(filter(lambda n:len(n) == 10,numbers))
 print(valid)
-'''
+
+
